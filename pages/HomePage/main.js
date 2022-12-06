@@ -1,15 +1,15 @@
 let isDown = false;
 let startX;
 let scrollLeft;
-
+let flagDetailCart = true;
 
 function scrollHeader() {
     const header = $(".js-header");
-    let sticky = header.offsetTop;
-    if (window.pageYOffset > sticky) {
-        $('.js-header-menu').classList.add("sticky");
+    let scrolled = window.scrollY;
+    if (scrolled > header.height()) {
+        header.removeClass('isTop');
     } else {
-        $('.js-header-menu').classList.remove("sticky");
+        header.addClass('isTop');
     }
 }
 
@@ -56,9 +56,27 @@ function handleMousemoveSlide(e) {
     slider[0].scrollLeft = scrollLeft - walk;
 }
 
-$(document).ready(function () {
-    // $(document).on(scrollHeader);
+function showDetailCart() {
+    if (flagDetailCart) {
+        flagDetailCart = false;
+        return $($(this).attr('data-id')).removeClass('hidden');
+    } else {
+        flagDetailCart = true;
+        return $($(this).attr('data-id')).addClass('hidden');
+    }
+}
 
+function scrollToDiv() {
+    const offset = $($(this).attr('data-id')).offset();
+    $('html, body').animate({ scrollTop: offset.top }, 1200);
+}
+
+$(document).ready(function () {
+    document.addEventListener('scroll', function (e) {
+        scrollHeader();
+    }, true)
+    $(document).on('click', '.js-header-item', scrollToDiv)
+    $(document).on('click', '.js-btn-show-card', showDetailCart)
     $(document).on('click', '.js-top', goToTop)
     $(document).on('click', '.js-see-next', seeNext)
     $(document).on('click', '.js-hide', seeHide)

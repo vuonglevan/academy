@@ -16,19 +16,18 @@
 
 <body>
     <div class="container">
-        <div class="page-header js-header">
-            <div class="header-menus js-header-menu fixed">
-                <!-- <div class="header-menus js-header-menu"> -->
+        <div class="page-header isTop  js-header">
+            <div class="header-menus js-header-menu">
                 <div class="menu-item">
                     <button class="btn-header js-top">TOP</button>
                 </div>
-                <div class="menu-item">コース概要</div>
-                <div class="menu-item">卒業生の声</div>
-                <div class="menu-item">特徴</div>
-                <div class="menu-item">カリキュラム・料金</div>
-                <div class="menu-item">講師</div>
-                <div class="menu-item">無料相談会</div>
-                <div class="menu-item">よくある質問</div>
+                <div class="menu-item js-header-item" data-id="#overview"><a href="#overview">コース概要</a></div>
+                <div class="menu-item js-header-item" data-id="#voice"><a href="#voice"> 卒業生の声 </a></div>
+                <div class="menu-item js-header-item" data-id="#feature"> <a href="#feature">特徴</a> </div>
+                <div class="menu-item js-header-item" data-id="#card"> <a href="#card"> カリキュラム・料金</a></div>
+                <div class="menu-item js-header-item" data-id="#teacher"><a href="#teacher"> 講師</a></div>
+                <div class="menu-item js-header-item" data-id="#consultation"><a href="#consultation"> 無料相談会</a></div>
+                <div class="menu-item js-header-item" data-id="#questions"><a href="#questions">よくある質問 </a></div>
                 <div class="menu-item menu-primary">無料相談会はこちら</div>
             </div>
             <div class="header-img">
@@ -36,212 +35,217 @@
                     alt="">
             </div>
             <div class="header-bottom">
-                <div class="menu-bottom-item">コース概要</div>
-                <div class="menu-bottom-item">卒業生の声</div>
-                <div class="menu-bottom-item">特徴</div>
-                <div class="menu-bottom-item">カリキュラム・料金</div>
-                <div class="menu-bottom-item">講師</div>
-                <div class="menu-bottom-item">無料相談会</div>
-                <div class="menu-bottom-item">よくある質問</div>
+                <div class="menu-bottom-item js-header-item"><a href="#overview">コース概要</a></div>
+                <div class="menu-bottom-item js-header-item"><a href="#voice">卒業生の声</a></div>
+                <div class="menu-bottom-item js-header-item"><a href="#feature">特徴</a></div>
+                <div class="menu-bottom-item js-header-item"><a href="#card">カリキュラム・料金</a></div>
+                <div class="menu-bottom-item js-header-item"><a href="#teacher">講師</a></div>
+                <div class="menu-bottom-item js-header-item"><a href="#consultation">無料相談会</a></div>
+                <div class="menu-bottom-item js-header-item"><a href="#questions">よくある質問</a></div>
             </div>
         </div>
         <!-- End header  -->
 
         <div class="main-content">
             <!-- tóm tắt nội dung chương trình Summary of program content -->
-            <div class="program-content">
-                <div class="alignment">
+            <div class="row-container">
+                <div class="program-content" id="overview">
                     <div class="title new-box">
                         コース概要
                     </div>
-                    <!-- mô tả  -->
-                    <div class="row description">
-                        <div class="description-text">
-                            経験や想いを伝える専門家 <br>
-                            <span class="description-lable">インタビューライター</span>を育てるオンラインスクール
-                        </div>
-                        <!-- giới thiệu -->
-                        <div class="introduces flex-item">
-                            <div class="introduce-item item">
-                                完全オンライン 独自カリキュラム
+                    <div class="alignment">
+                        <!-- mô tả  -->
+                        <div class="row description">
+                            <div class="description-text">
+                                経験や想いを伝える専門家 <br>
+                                <span class="description-lable">インタビューライター</span>を育てるオンラインスクール
                             </div>
-                            <div class="introduce-item item">
-                                取材・執筆を 個別に５回以上添削
-                            </div>
-                            <div class="introduce-item item">
-                                仕事の紹介 キャリア支援も
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- hỗ trợ -->
-                <div class="row support new-box">
-                    <div class="support-title font-h1">
-                        経験不問 <br> <span class="span-decoration"> 今 の自分を変えたい方</span>を応援します
-                    </div>
-                    <div class="find-jobs flex-item alignment">
-                        <div class="find-job item">
-                            <div class="item-name">
-                                新しくライターの仕事を始めたい
-                            </div>
-                            <div class="list-support">
-                                <div class="list-support-item">
-                                    <i class="fa-solid fa-circle-check"></i>副業でライターを始めて
-                                    <span class="list-support-label">
-                                        収入の柱に
-                                    </span>
+                            <!-- giới thiệu -->
+                            <div class="introduces flex-item">
+                                <div class="introduce-item item">
+                                    完全オンライン 独自カリキュラム
                                 </div>
-                                <div class="list-support-item">
-                                    <i class="fa-solid fa-circle-check"></i>フリーランスとして<span class="list-support-label">
-                                        独立したい</span>
+                                <div class="introduce-item item">
+                                    取材・執筆を 個別に５回以上添削
                                 </div>
-                            </div>
-                        </div>
-                        <div class="find-job item">
-                            <div class="item-name">
-                                新しくライターの仕事を始めたい
-                            </div>
-                            <div class="list-support">
-                                <div class="list-support-item">
-                                    <i class="fa-solid fa-circle-check"></i>もっと仕事を<span class="list-support-label">
-                                        増やしたい</span>
-                                </div>
-                                <div class="list-support-item">
-                                    <i class="fa-solid fa-circle-check"></i><span
-                                        class="list-support-label">もっと仕事を増やしたい</span>
-                                </div>
-                                <div class="list-support-item">
-                                    <i class="fa-solid fa-circle-check"></i>文字数をこなす作業でなく、<span
-                                        class="list-support-label">やりがいがある仕事</span>をしたい
-                                </div>
-                                <div class="list-support-item">
-                                    <i class="fa-solid fa-circle-check"></i>将来のキャリアが広がる<span
-                                        class="list-support-label">スキルを身に付けたい</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="find-job item">
-                            <div class="item-name">
-                                新しくライターの仕事を始めたい
-                            </div>
-                            <div class="list-support">
-                                <div class="list-support-item">
-                                    <i class="fa-solid fa-circle-check"></i>採用のために<span
-                                        class="list-support-label">社員インタビュー</span>を内製したい
-                                </div>
-                                <div class="list-support-item">
-                                    <i class="fa-solid fa-circle-check"></i>商品・サービスの<span
-                                        class="list-support-label">事例インタビュー</span>を内製したい
+                                <div class="introduce-item item">
+                                    仕事の紹介 キャリア支援も
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="btn new-box">
-                        <button class="btn-register">お申し込みはこちら<i class="fa-sharp fa-solid fa-play"></i></button>
-                    </div>
-                </div>
-                <!-- loại bỏ tiêu cực  -->
-                <div class="row remove-negative description alignment">
-                    <div class="description-text-text description-text">
-                        Webライターの<span class="description-lable">“３つの負”</span>を解消
-                    </div>
-                    <div class="flex-item remove-negative-label">
-                        <div class="lable-item none"></div>
-                        <div class="lable-item">Webライター</div>
-                        <div class="lable-item">インタビューライター</div>
-                    </div>
-                    <div class="flex-item remove-negative-table">
-                        <div class="item">
-                            <div class="box-item">
-                                専門性
+                    <!-- hỗ trợ -->
+                    <div class="row support new-box">
+                        <div class="support-title font-h1">
+                            経験不問 <br> <span class="span-decoration"> 今 の自分を変えたい方</span>を応援します
+                        </div>
+                        <div class="find-jobs flex-item alignment">
+                            <div class="find-job item">
+                                <div class="item-name">
+                                    新しくライターの仕事を始めたい
+                                </div>
+                                <div class="list-support">
+                                    <div class="list-support-item">
+                                        <i class="fa-solid fa-circle-check"></i>副業でライターを始めて
+                                        <span class="list-support-label">
+                                            収入の柱に
+                                        </span>
+                                    </div>
+                                    <div class="list-support-item">
+                                        <i class="fa-solid fa-circle-check"></i>フリーランスとして<span
+                                            class="list-support-label">
+                                            独立したい</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box-item">
-                                単価
+                            <div class="find-job item">
+                                <div class="item-name">
+                                    新しくライターの仕事を始めたい
+                                </div>
+                                <div class="list-support">
+                                    <div class="list-support-item">
+                                        <i class="fa-solid fa-circle-check"></i>もっと仕事を<span class="list-support-label">
+                                            増やしたい</span>
+                                    </div>
+                                    <div class="list-support-item">
+                                        <i class="fa-solid fa-circle-check"></i><span
+                                            class="list-support-label">もっと仕事を増やしたい</span>
+                                    </div>
+                                    <div class="list-support-item">
+                                        <i class="fa-solid fa-circle-check"></i>文字数をこなす作業でなく、<span
+                                            class="list-support-label">やりがいがある仕事</span>をしたい
+                                    </div>
+                                    <div class="list-support-item">
+                                        <i class="fa-solid fa-circle-check"></i>将来のキャリアが広がる<span
+                                            class="list-support-label">スキルを身に付けたい</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box-item">
-                                やりがい
+                            <div class="find-job item">
+                                <div class="item-name">
+                                    新しくライターの仕事を始めたい
+                                </div>
+                                <div class="list-support">
+                                    <div class="list-support-item">
+                                        <i class="fa-solid fa-circle-check"></i>採用のために<span
+                                            class="list-support-label">社員インタビュー</span>を内製したい
+                                    </div>
+                                    <div class="list-support-item">
+                                        <i class="fa-solid fa-circle-check"></i>商品・サービスの<span
+                                            class="list-support-label">事例インタビュー</span>を内製したい
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="box-item">
-                                <i class="fa-solid fa-x"></i>
-                                誰でも<br> 始められる
-                            </div>
-                            <div class="box-item">
-                                <i class="fa-solid fa-triangle"></i>
-                                文字単価<br> 1〜5円※
-                            </div>
-                            <div class="box-item">
-                                <i class="fa-solid fa-triangle"></i>
-                                数をこなす <br>作業に
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="box-item">
-                                <i class="fa-regular fa-circle"></i>
-                                代替性が<br> 低くなる
-                            </div>
-                            <div class="box-item">
-                                <i class="fa-regular fa-circle"></i>
-                                記事単価<br> 2〜5万円※
-                            </div>
-                            <div class="box-item">
-                                <i class="fa-regular fa-circle"></i>
-                                相手が<br> 見える仕事
-                            </div>
+                        <div class="btn new-box">
+                            <button class="btn-register">お申し込みはこちら<i class="fa-sharp fa-solid fa-play"></i></button>
                         </div>
                     </div>
-                    <div class="note">
-                        ※1記事2000文字の場合（参照元：クラウドワークス社・クラウドソーシングTimes https://crowdworks.jp/times/know-how/12526/#i-4）
+                    <!-- loại bỏ tiêu cực  -->
+                    <div class="row remove-negative description alignment">
+                        <div class="description-text-text description-text">
+                            Webライターの<span class="description-lable">“３つの負”</span>を解消
+                        </div>
+                        <div class="flex-item remove-negative-label">
+                            <div class="lable-item none"></div>
+                            <div class="lable-item">Webライター</div>
+                            <div class="lable-item">インタビューライター</div>
+                        </div>
+                        <div class="flex-item remove-negative-table">
+                            <div class="item">
+                                <div class="box-item">
+                                    専門性
+                                </div>
+                                <div class="box-item">
+                                    単価
+                                </div>
+                                <div class="box-item">
+                                    やりがい
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box-item">
+                                    <i class="fa-solid fa-x"></i>
+                                    誰でも<br> 始められる
+                                </div>
+                                <div class="box-item">
+                                    <i class="fa-solid fa-triangle"></i>
+                                    文字単価<br> 1〜5円※
+                                </div>
+                                <div class="box-item">
+                                    <i class="fa-solid fa-triangle"></i>
+                                    数をこなす <br>作業に
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box-item">
+                                    <i class="fa-regular fa-circle"></i>
+                                    代替性が<br> 低くなる
+                                </div>
+                                <div class="box-item">
+                                    <i class="fa-regular fa-circle"></i>
+                                    記事単価<br> 2〜5万円※
+                                </div>
+                                <div class="box-item">
+                                    <i class="fa-regular fa-circle"></i>
+                                    相手が<br> 見える仕事
+                                </div>
+                            </div>
+                        </div>
+                        <div class="note">
+                            ※1記事2000文字の場合（参照元：クラウドワークス社・クラウドソーシングTimes https://crowdworks.jp/times/know-how/12526/#i-4）
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- tiếng nói sinh viên tốt nghiệp Voices of graduates -->
-            <div class="voices-student alignment">
-                <div class="title new-box">卒業生の声</div>
-                <div class="voices-student-content">
-                    <div class="description-text">
-                        実際に卒業生が<span class="description-lable">各分野で活躍</span>しています
-                    </div>
-                    <div class="slider-container js-slider">
-                        <div class="slider ">
-                            <div class="slider-content">
-                                <div class="avt">
-                                    <img src="https://images.pexels.com/photos/5774804/pexels-photo-5774804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                        width="270px" height="270px" alt="">
-                                </div>
-                                <div class="infor">
-                                    <div class="name">
-                                        卯岡 若菜さん
+            <div class="row-container">
+                <div class="title new-box" id="voice">卒業生の声</div>
+                <div class="voices-student alignment">
+                    <div class="voices-student-content">
+                        <div class="description-text">
+                            実際に卒業生が<span class="description-lable">各分野で活躍</span>しています
+                        </div>
+                        <div class="slider-container js-slider">
+                            <div class="slider ">
+                                <div class="slider-content">
+                                    <div class="avt">
+                                        <img src="https://images.pexels.com/photos/5774804/pexels-photo-5774804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            width="270px" height="270px" alt="">
                                     </div>
-                                    <div class="evaluate">
-                                        独学のインタビューを見直して、月10万円以上収入UP
-                                    </div>
-                                    <div class="information">
-                                        フリーライターとしてインタビューの仕事を受ける中で、独学だったので一度体系的に学びたいと思い受講しました。<br>
-                                        講義では取材の進め方や質問の引き出しが増え、ワークを通じて他の人の例を知れることがとてもよかったです。<br>
-                                        結果的に受講後も平均月10万円以上のお仕事をいただき、その実績が他の仕事にも繋がっています。<br>
+                                    <div class="infor">
+                                        <div class="name">
+                                            卯岡 若菜さん
+                                        </div>
+                                        <div class="evaluate">
+                                            独学のインタビューを見直して、月10万円以上収入UP
+                                        </div>
+                                        <div class="information">
+                                            フリーライターとしてインタビューの仕事を受ける中で、独学だったので一度体系的に学びたいと思い受講しました。<br>
+                                            講義では取材の進め方や質問の引き出しが増え、ワークを通じて他の人の例を知れることがとてもよかったです。<br>
+                                            結果的に受講後も平均月10万円以上のお仕事をいただき、その実績が他の仕事にも繋がっています。<br>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slider">
-                            <div class="slider-content">
-                                <div class="avt">
-                                    <img src="https://images.pexels.com/photos/5774804/pexels-photo-5774804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                        width="270px" height="270px" alt="">
-                                </div>
-                                <div class="infor">
-                                    <div class="name">
-                                        卯岡 若菜さん
+                            <div class="slider">
+                                <div class="slider-content">
+                                    <div class="avt">
+                                        <img src="https://images.pexels.com/photos/5774804/pexels-photo-5774804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            width="270px" height="270px" alt="">
                                     </div>
-                                    <div class="evaluate">
-                                        独学のインタビューを見直して、月10万円以上収入UP
-                                    </div>
-                                    <div class="information">
-                                        フリーライターとしてインタビューの仕事を受ける中で、独学だったので一度体系的に学びたいと思い受講しました。
-                                        講義では取材の進め方や質問の引き出しが増え、ワークを通じて他の人の例を知れることがとてもよかったです。
-                                        結果的に受講後も平均月10万円以上のお仕事をいただき、その実績が他の仕事にも繋がっています。
+                                    <div class="infor">
+                                        <div class="name">
+                                            卯岡 若菜さん
+                                        </div>
+                                        <div class="evaluate">
+                                            独学のインタビューを見直して、月10万円以上収入UP
+                                        </div>
+                                        <div class="information">
+                                            フリーライターとしてインタビューの仕事を受ける中で、独学だったので一度体系的に学びたいと思い受講しました。
+                                            講義では取材の進め方や質問の引き出しが増え、ワークを通じて他の人の例を知れることがとてもよかったです。
+                                            結果的に受講後も平均月10万円以上のお仕事をいただき、その実績が他の仕事にも繋がっています。
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -251,523 +255,536 @@
             </div>
 
             <!-- tính năng  -->
-            <div class="feature alignment">
-                <div class="title new-box">
+            <div class="row-container">
+                <div class="title new-box" id="feature">
                     特徴
                 </div>
-                <div class="feature-content">
-                    <div class="description-text">
-                        <span class="description-lable">インタビュー特化</span>の <br>
-                        メディア・制作会社だからできる伴走体制
-                    </div>
-                    <div class="feature-board">
-                        <div class="board-container">
-                            <div class="board">
-                                <div class="board-title">
-                                    伴走体制
-                                </div>
-                                <div class="another">another life.</div>
-                                <div class="interview">
-                                    「人生経験のシェアリング」をテーマにしたインタビューメディア
-                                </div>
-                                <div class="board-node">
-                                    <div class="node-item">
-                                        <i class="fa-solid fa-circle"></i>
-                                        オウンドメディア、採用サイト、社内報制作 etc
+                <div class="feature alignment">
+                    <div class="feature-content">
+                        <div class="description-text">
+                            <span class="description-lable">インタビュー特化</span>の <br>
+                            メディア・制作会社だからできる伴走体制
+                        </div>
+                        <div class="feature-board">
+                            <div class="board-container">
+                                <div class="board">
+                                    <div class="board-title">
+                                        伴走体制
                                     </div>
-                                    <div class="board-item">
-                                        <i class="fa-solid fa-circle"></i>
-                                        大手企業を中心とした顧客実績
+                                    <div class="another">another life.</div>
+                                    <div class="interview">
+                                        「人生経験のシェアリング」をテーマにしたインタビューメディア
+                                    </div>
+                                    <div class="board-node">
+                                        <div class="node-item">
+                                            <i class="fa-solid fa-circle"></i>
+                                            オウンドメディア、採用サイト、社内報制作 etc
+                                        </div>
+                                        <div class="board-item">
+                                            <i class="fa-solid fa-circle"></i>
+                                            大手企業を中心とした顧客実績
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="board">
+                                    <div class="board-title">
+                                        伴走体制
+                                    </div>
+                                    <div class="board-node">
+                                        <div class="node-item">
+                                            <i class="fa-solid fa-circle"></i>
+                                            オウンドメディア、採用サイト、社内報制作 etc
+                                        </div>
+                                        <div class="board-item">
+                                            <i class="fa-solid fa-circle"></i>
+                                            大手企業を中心とした顧客実績
+                                        </div>
+                                    </div>
+                                    <div class="board-img">
+                                        <img src="https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="">
+                                        <img src="https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="">
+                                        <img src="https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="board">
-                                <div class="board-title">
-                                    伴走体制
+                            <div class="board-bottom">
+                                <div class="board-bottom-title">
+                                    another life. acadenmy
                                 </div>
-                                <div class="board-node">
-                                    <div class="node-item">
-                                        <i class="fa-solid fa-circle"></i>
-                                        オウンドメディア、採用サイト、社内報制作 etc
-                                    </div>
-                                    <div class="board-item">
-                                        <i class="fa-solid fa-circle"></i>
-                                        大手企業を中心とした顧客実績
-                                    </div>
+                                <div class="board-bottom-lable">
+                                    インタビューライター養成講座
                                 </div>
-                                <div class="board-img">
-                                    <img src="https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                        alt="">
-                                    <img src="https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                        alt="">
-                                    <img src="https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                        alt="">
+                                <div class="board-bottom-description">
+                                    ライター の育成から発注まで一括支援
                                 </div>
                             </div>
                         </div>
-                        <div class="board-bottom">
-                            <div class="board-bottom-title">
-                                another life. acadenmy
-                            </div>
-                            <div class="board-bottom-lable">
-                                インタビューライター養成講座
-                            </div>
-                            <div class="board-bottom-description">
-                                ライター の育成から発注まで一括支援
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="description-text mt">
-                    <span class="description-lable">
-                        ６つのスキル</span>を実践的に身に付けます
+                    <div class="description-text mt">
+                        <span class="description-lable">
+                            ６つのスキル</span>を実践的に身に付けます
+                    </div>
                 </div>
             </div>
 
             <!-- skill -->
-            <div class="skills">
-                <div class="number">01</div>
-                <div class="skills-title title-son">
-                    インタビューライターに必要な ６つのスキル
-                </div>
-                <div class="list-skill alignment">
-                    <div class="skill">ビジネス 理解力</div>
-                    <div class="skill">企画力</div>
-                    <div class="skill">関係 構築力</div>
-                    <div class="skill">質問力</div>
-                    <div class="skill">編集力</div>
-                    <div class="skill">執筆力</div>
+            <div class="row-container">
+                <div class="skills">
+                    <div class="number">01</div>
+                    <div class="skills-title title-son">
+                        インタビューライターに必要な ６つのスキル
+                    </div>
+                    <div class="list-skill alignment">
+                        <div class="skill">ビジネス<br> 理解力</div>
+                        <div class="skill">企画力</div>
+                        <div class="skill">関係 <br>構築力</div>
+                        <div class="skill">質問力</div>
+                        <div class="skill">編集力</div>
+                        <div class="skill">執筆力</div>
+                    </div>
                 </div>
             </div>
 
             <!-- lang nghe -->
-            <div class="listen">
-                <div class="number">
-                    02
-                </div>
-                <div class="listen-title title-son">
-                    聴いて終わりじゃない<br> 実践的なカリキュラム
-                </div>
-                <div class="equation">
-                    <div class="circles">
-                        <div class="circle">
-                            <div class="circle-name">
-                                講義
+            <div class="row-container">
+                <div class="listen">
+                    <div class="number">
+                        02
+                    </div>
+                    <div class="listen-title title-son">
+                        聴いて終わりじゃない<br> 実践的なカリキュラム
+                    </div>
+                    <div class="equation alignment">
+                        <div class="circles">
+                            <div class="circle">
+                                <div class="circle-name">
+                                    講義
+                                </div>
+                                <div class="circle-content">
+                                    基礎理論の学習・<br> ワークショップ <br> 実施
+                                </div>
                             </div>
-                            <div class="circle-content">
-                                基礎理論の学習・<br> ワークショップ <br> 実施
+                            <div class="circle">
+                                <div class="circle-name">
+                                    添削
+                                </div>
+                                <div class="circle-content">
+                                    個別に <br> フィードバック<br>（添削5回）
+                                </div>
+                            </div>
+                            <div class="circle">
+                                <div class="circle-name">
+                                    課題
+                                </div>
+                                <div class="circle-content">
+                                    授業内容を<br> 実践する宿題
+                                </div>
                             </div>
                         </div>
-                        <div class="circle">
-                            <div class="circle-name">
-                                添削
-                            </div>
-                            <div class="circle-content">
-                                個別に <br> フィードバック<br>（添削5回）
-                            </div>
+                        <div class="plus">
                         </div>
-                        <div class="circle">
-                            <div class="circle-name">
-                                課題
+                        <div class="result-box">
+                            <div class="result circle">
+                                <div class="result-name">
+                                    1on1面談
+                                </div>
+                                <div class="result-content">
+                                    仕事の取り方・<br> キャリア設計<br> の個別支援
+                                </div>
                             </div>
-                            <div class="circle-content">
-                                授業内容を<br> 実践する宿題
-                            </div>
+                            <div class="node-result">※プロコースのみ</div>
                         </div>
                     </div>
-                    <div class="plus">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    <div class="result-box">
-                        <div class="result circle">
-                            <div class="result-name">
-                                1on1面談
-                            </div>
-                            <div class="result-content">
-                                仕事の取り方・<br> キャリア設計<br> の個別支援
-                            </div>
-                        </div>
-                        <div class="node-result">※プロコースのみ</div>
-                    </div>
                 </div>
-
             </div>
 
             <!-- //card -->
-            <div class="cards alignment">
-                <div class="btn new-box">
-                    <button class="btn-register">お申し込みはこちら<i class="fa-sharp fa-solid fa-play"></i></button>
+            <div class="row-container">
+                <div class="title new-box" id="card">
+                    カリキュラム・料金
                 </div>
-                <div class="title new-box">
-                    特徴
-                </div>
-                <div class="description-text">
-                    目的と学び方に合わせて、<span class="description-lable">３つのコース</span> で支援します
-                </div>
-                <div class="card-content flex-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="price">スタンダード<br> コース<br> 99,800円（税別）</div>
-                            <div class="describe">
-                                <div class="describe-item">●講義全４回＋特別講座２回</div>
-                                <div class="describe-item">●添削５回</div>
-                                <div class="describe-item">●1on1コンサル２回</div>
+                <div class="cards alignment">
+                    <div class="btn new-box">
+                        <button class="btn-register">お申し込みはこちら<i class="fa-sharp fa-solid fa-play"></i></button>
+                    </div>
+
+                    <div class="description-text">
+                        目的と学び方に合わせて、<span class="description-lable">３つのコース</span> で支援します
+                    </div>
+                    <div class="card-content flex-item">
+                        <div class="card js-card">
+                            <div class="card-body">
+                                <div class="price">スタンダード<br> コース<br> 99,800円（税別）</div>
+                                <div class="describe">
+                                    <div class="describe-item">●講義全４回＋特別講座２回</div>
+                                    <div class="describe-item">●添削５回</div>
+                                    <div class="describe-item">●1on1コンサル２回</div>
+                                </div>
+                                <button class="btn-card">開講スケジュール</button>
                             </div>
-                            <button class="btn-card">開講スケジュール</button>
+                            <div class="card-detail hidden" id="card-standard">
+                                <div class="row">
+                                    <div class="title-card">講座内容</div>
+                                    <div class="card-number">
+                                        第一回 <br>●インタビューライターに必要な6つの力 <br> ●なぜ「コンテンツ」を作るのか <br> ●記事ができるまでの工程と必要準備
+                                    </div>
+                                    <div class="card-lable">
+                                        <span class="lable">
+                                            ビジネス理解力
+                                        </span>
+                                        <span class="lable">
+                                            企画力
+                                        </span>
+                                    </div>
+                                    <div class="card-number">
+                                        第二回<br> ●良いインタビューとは何か<br> ●人から話を引き出す技術
+                                    </div>
+                                    <div class="card-lable">
+                                        <span class="lable">
+                                            ビジネス理解力
+                                        </span>
+                                        <span class="lable">
+                                            企画力
+                                        </span>
+                                    </div>
+                                    <div class="card-number">
+                                        第四回 <br>●インタビュー執筆 <br>●実践ワークショップ
+                                    </div>
+                                    <div class="card-number">
+                                        卒業制作 <br>●運営から記事制作を依頼
+                                    </div>
+                                    <div class="title-card">案件獲得支援</div>
+                                    <div class="card-number">
+                                        なし
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        案件獲得支援
+                                    </div>
+                                    <div class="card-number">
+                                        2ヶ月
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        選考
+                                    </div>
+                                    <div class="card-number">
+                                        なし
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        受講後のゴール
+                                    </div>
+                                    <div class="card-number">
+                                        ●インタビューライティングの型を理解し、実践できる<br> ●ポートフォリオを作る素材が揃っている<br> ●仕事獲得を始められる
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        料金（税別）
+                                    </div>
+                                    <div class="card-number">
+                                        ●一括払い：99,800円 <br> ●３ヶ月払い：月々 34,515円 （総額：103,542円）<br> ●６ヶ月払い：月々 17,881円
+                                        （総額：107,285円）
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-view-detail">
+                                <div></div>
+                                <button data-id="#card-standard" class="js-btn-show-card">詳細を見る<i
+                                        class="fa-solid fa-caret-down"></i></button>
+                            </div>
                         </div>
-                        <div class="card-detail">
-                            <div class="row">
-                                <div class="title-card">講座内容</div>
-                                <div class="card-number">
-                                    第一回 <br>●インタビューライターに必要な6つの力 <br> ●なぜ「コンテンツ」を作るのか <br> ●記事ができるまでの工程と必要準備
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="price">プロフェッショナル <br>コース <br> 198,000円（税別）</div>
+                                <div class="describe">
+                                    <div class="describe-item">●講義全４回＋特別講座２回</div>
+                                    <div class="describe-item">●添削５回</div>
+                                    <div class="describe-item">●1on1コンサル２回</div>
                                 </div>
-                                <div class="card-lable">
-                                    <span class="lable">
-                                        ビジネス理解力
-                                    </span>
-                                    <span class="lable">
-                                        企画力
-                                    </span>
+                                <button class="btn-card">開講スケジュール</button>
+                            </div>
+                            <div class="card-detail hidden" id="card-professional">
+                                <div class="row">
+                                    <div class="title-card">講座内容</div>
+                                    <div class="card-number">
+                                        第一回 <br>●インタビューライターに必要な6つの力 <br> ●なぜ「コンテンツ」を作るのか <br> ●記事ができるまでの工程と必要準備
+                                    </div>
+                                    <div class="card-lable">
+                                        <span class="lable">
+                                            ビジネス理解力
+                                        </span>
+                                        <span class="lable">
+                                            企画力
+                                        </span>
+                                    </div>
+                                    <div class="card-number">
+                                        第二回<br> ●良いインタビューとは何か<br> ●人から話を引き出す技術
+                                    </div>
+                                    <div class="card-lable">
+                                        <span class="lable">
+                                            ビジネス理解力
+                                        </span>
+                                        <span class="lable">
+                                            企画力
+                                        </span>
+                                    </div>
+                                    <div class="card-number">
+                                        第四回 <br>●インタビュー執筆 <br>●実践ワークショップ
+                                    </div>
+                                    <div class="card-number">
+                                        卒業制作 <br>●運営から記事制作を依頼
+                                    </div>
+                                    <div class="title-card">案件獲得支援</div>
+                                    <div class="card-number">
+                                        なし
+                                    </div>
                                 </div>
-                                <div class="card-number">
-                                    第二回<br> ●良いインタビューとは何か<br> ●人から話を引き出す技術
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        案件獲得支援
+                                    </div>
+                                    <div class="card-number">
+                                        2ヶ月
+                                    </div>
                                 </div>
-                                <div class="card-lable">
-                                    <span class="lable">
-                                        ビジネス理解力
-                                    </span>
-                                    <span class="lable">
-                                        企画力
-                                    </span>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        選考
+                                    </div>
+                                    <div class="card-number">
+                                        なし
+                                    </div>
                                 </div>
-                                <div class="card-number">
-                                    第四回 <br>●インタビュー執筆 <br>●実践ワークショップ
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        受講後のゴール
+                                    </div>
+                                    <div class="card-number">
+                                        ●インタビューライティングの型を理解し、実践できる<br> ●ポートフォリオを作る素材が揃っている<br> ●仕事獲得を始められる
+                                    </div>
                                 </div>
-                                <div class="card-number">
-                                    卒業制作 <br>●運営から記事制作を依頼
-                                </div>
-                                <div class="title-card">案件獲得支援</div>
-                                <div class="card-number">
-                                    なし
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        料金（税別）
+                                    </div>
+                                    <div class="card-number">
+                                        ●一括払い：99,800円 <br> ●３ヶ月払い：月々 34,515円 （総額：103,542円）<br> ●６ヶ月払い：月々 17,881円
+                                        （総額：107,285円）
+                                    </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    案件獲得支援
-                                </div>
-                                <div class="card-number">
-                                    2ヶ月
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    選考
-                                </div>
-                                <div class="card-number">
-                                    なし
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    受講後のゴール
-                                </div>
-                                <div class="card-number">
-                                    ●インタビューライティングの型を理解し、実践できる<br> ●ポートフォリオを作る素材が揃っている<br> ●仕事獲得を始められる
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    料金（税別）
-                                </div>
-                                <div class="card-number">
-                                    ●一括払い：99,800円 <br> ●３ヶ月払い：月々 34,515円 （総額：103,542円）<br> ●６ヶ月払い：月々 17,881円
-                                    （総額：107,285円）
-                                </div>
+                            <div class="card-view-detail">
+                                <div></div>
+                                <button data-id="#card-professional" class="js-btn-show-card">詳細を見る<i
+                                        class="fa-solid fa-caret-down"></i></button>
                             </div>
                         </div>
-                        <div class="card-view-detail">
-                            <div></div>
-                            <button>詳細を見る<i class="fa-solid fa-caret-down"></i></button>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="price">動画学習 コース <br> 49,800円（税別）</div>
+                                <div class="describe">
+                                    <div class="describe-item">●講義全４回＋特別講座２回</div>
+                                    <div class="describe-item">●添削５回</div>
+                                    <div class="describe-item">●1on1コンサル２回</div>
+                                </div>
+                                <button class="btn-card">開講スケジュール</button>
+                            </div>
+                            <div class="card-detail hidden" id="card-video-learning">
+                                <div class="row">
+                                    <div class="title-card">講座内容</div>
+                                    <div class="card-number">
+                                        第一回 <br>●インタビューライターに必要な6つの力 <br> ●なぜ「コンテンツ」を作るのか <br> ●記事ができるまでの工程と必要準備
+                                    </div>
+                                    <div class="card-lable">
+                                        <span class="lable">
+                                            ビジネス理解力
+                                        </span>
+                                        <span class="lable">
+                                            企画力
+                                        </span>
+                                    </div>
+                                    <div class="card-number">
+                                        第二回<br> ●良いインタビューとは何か<br> ●人から話を引き出す技術
+                                    </div>
+                                    <div class="card-lable">
+                                        <span class="lable">
+                                            ビジネス理解力
+                                        </span>
+                                        <span class="lable">
+                                            企画力
+                                        </span>
+                                    </div>
+                                    <div class="card-number">
+                                        第四回 <br>●インタビュー執筆 <br>●実践ワークショップ
+                                    </div>
+                                    <div class="card-number">
+                                        卒業制作 <br>●運営から記事制作を依頼
+                                    </div>
+                                    <div class="title-card">案件獲得支援</div>
+                                    <div class="card-number">
+                                        なし
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        案件獲得支援
+                                    </div>
+                                    <div class="card-number">
+                                        2ヶ月
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        選考
+                                    </div>
+                                    <div class="card-number">
+                                        なし
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        受講後のゴール
+                                    </div>
+                                    <div class="card-number">
+                                        ●インタビューライティングの型を理解し、実践できる<br> ●ポートフォリオを作る素材が揃っている<br> ●仕事獲得を始められる
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="card-title">
+                                        料金（税別）
+                                    </div>
+                                    <div class="card-number">
+                                        ●一括払い：99,800円 <br> ●３ヶ月払い：月々 34,515円 （総額：103,542円）<br> ●６ヶ月払い：月々 17,881円
+                                        （総額：107,285円）
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-view-detail">
+                                <div></div>
+                                <button data-id="#card-video-learning" class="js-btn-show-card">詳細を見る<i
+                                        class="fa-solid fa-caret-down"></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="price">プロフェッショナル <br>コース <br> 198,000円（税別）</div>
-                            <div class="describe">
-                                <div class="describe-item">●講義全４回＋特別講座２回</div>
-                                <div class="describe-item">●添削５回</div>
-                                <div class="describe-item">●1on1コンサル２回</div>
-                            </div>
-                            <button class="btn-card">開講スケジュール</button>
-                        </div>
-                        <div class="card-detail">
-                            <div class="row">
-                                <div class="title-card">講座内容</div>
-                                <div class="card-number">
-                                    第一回 <br>●インタビューライターに必要な6つの力 <br> ●なぜ「コンテンツ」を作るのか <br> ●記事ができるまでの工程と必要準備
-                                </div>
-                                <div class="card-lable">
-                                    <span class="lable">
-                                        ビジネス理解力
-                                    </span>
-                                    <span class="lable">
-                                        企画力
-                                    </span>
-                                </div>
-                                <div class="card-number">
-                                    第二回<br> ●良いインタビューとは何か<br> ●人から話を引き出す技術
-                                </div>
-                                <div class="card-lable">
-                                    <span class="lable">
-                                        ビジネス理解力
-                                    </span>
-                                    <span class="lable">
-                                        企画力
-                                    </span>
-                                </div>
-                                <div class="card-number">
-                                    第四回 <br>●インタビュー執筆 <br>●実践ワークショップ
-                                </div>
-                                <div class="card-number">
-                                    卒業制作 <br>●運営から記事制作を依頼
-                                </div>
-                                <div class="title-card">案件獲得支援</div>
-                                <div class="card-number">
-                                    なし
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    案件獲得支援
-                                </div>
-                                <div class="card-number">
-                                    2ヶ月
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    選考
-                                </div>
-                                <div class="card-number">
-                                    なし
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    受講後のゴール
-                                </div>
-                                <div class="card-number">
-                                    ●インタビューライティングの型を理解し、実践できる<br> ●ポートフォリオを作る素材が揃っている<br> ●仕事獲得を始められる
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    料金（税別）
-                                </div>
-                                <div class="card-number">
-                                    ●一括払い：99,800円 <br> ●３ヶ月払い：月々 34,515円 （総額：103,542円）<br> ●６ヶ月払い：月々 17,881円
-                                    （総額：107,285円）
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-view-detail">
-                            <div></div>
-                            <button>詳細を見る<i class="fa-solid fa-caret-down"></i></button>
-                        </div>
+                    <div class="card-describe">
+                        <i class="fa-sharp fa-solid fa-circle"></i>
+                        簡易選考について <br>プロフェッショナルコースでは、受講生のお仕事の獲得やキャリア設計を伴走支援するため、事前面談での簡単な選考を行います。
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="price">プロフェッショナル <br>コース <br> 198,000円（税別）</div>
-                            <div class="describe">
-                                <div class="describe-item">●講義全４回＋特別講座２回</div>
-                                <div class="describe-item">●添削５回</div>
-                                <div class="describe-item">●1on1コンサル２回</div>
-                            </div>
-                            <button class="btn-card">開講スケジュール</button>
-                        </div>
-                        <div class="card-detail">
-                            <div class="row">
-                                <div class="title-card">講座内容</div>
-                                <div class="card-number">
-                                    第一回 <br>●インタビューライターに必要な6つの力 <br> ●なぜ「コンテンツ」を作るのか <br> ●記事ができるまでの工程と必要準備
-                                </div>
-                                <div class="card-lable">
-                                    <span class="lable">
-                                        ビジネス理解力
-                                    </span>
-                                    <span class="lable">
-                                        企画力
-                                    </span>
-                                </div>
-                                <div class="card-number">
-                                    第二回<br> ●良いインタビューとは何か<br> ●人から話を引き出す技術
-                                </div>
-                                <div class="card-lable">
-                                    <span class="lable">
-                                        ビジネス理解力
-                                    </span>
-                                    <span class="lable">
-                                        企画力
-                                    </span>
-                                </div>
-                                <div class="card-number">
-                                    第四回 <br>●インタビュー執筆 <br>●実践ワークショップ
-                                </div>
-                                <div class="card-number">
-                                    卒業制作 <br>●運営から記事制作を依頼
-                                </div>
-                                <div class="title-card">案件獲得支援</div>
-                                <div class="card-number">
-                                    なし
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    案件獲得支援
-                                </div>
-                                <div class="card-number">
-                                    2ヶ月
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    選考
-                                </div>
-                                <div class="card-number">
-                                    なし
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    受講後のゴール
-                                </div>
-                                <div class="card-number">
-                                    ●インタビューライティングの型を理解し、実践できる<br> ●ポートフォリオを作る素材が揃っている<br> ●仕事獲得を始められる
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="card-title">
-                                    料金（税別）
-                                </div>
-                                <div class="card-number">
-                                    ●一括払い：99,800円 <br> ●３ヶ月払い：月々 34,515円 （総額：103,542円）<br> ●６ヶ月払い：月々 17,881円
-                                    （総額：107,285円）
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-view-detail">
-                            <div></div>
-                            <button>詳細を見る<i class="fa-solid fa-caret-down"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-describe">
-                    <i class="fa-sharp fa-solid fa-circle"></i>
-                    簡易選考について <br>プロフェッショナルコースでは、受講生のお仕事の獲得やキャリア設計を伴走支援するため、事前面談での簡単な選考を行います。
                 </div>
             </div>
 
             <!-- teacher -->
-
-            <div class="teacher">
-                <div class="alignment">
-                    <div class="title new-box">
+            <div class="row-container">
+                <div class="teacher">
+                    <div class="title new-box" id="teacher">
                         講師
                     </div>
-                </div>
-                <div class="teacher-info">
-                    <div class="alignment flex-item">
-                        <div class="teacher-descrice">
-                            <p>インタビューライティングには人の人生を変える力があります。</p>
-                            <p>another life 。 を通じて様々な方々のストーリーを取材する中で、</p>
-                            <p>自分の経験や想いを形にした人が、そのコンテンツを読んで追体験した人が、</p>
-                            <p> 新しい一歩を踏み出し、大きな変化を生み出す姿をたくさん見てきました。</p>
-                            <p> Web上にコンテンツが溢れかえることで、情報の専門性や信頼性を担保する重要度は日々増しています。</p>
-                            <p>誰かの経験や想いを形にする「インタビュー」というスキルが、あなたのキャリアの大きな武器になります。</p>
-                            <p> 私たちは、“今の自分を変える新しい挑戦”を応援します。</p>
-                        </div>
-                        <div class="avt">
-                            <img src="https://images.pexels.com/photos/1122639/pexels-photo-1122639.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                alt="">
-                            <div class="teacher-name">
-                                新條 隼人
+                    <!-- <div class="alignment">
+                    
+                </div> -->
+                    <div class="teacher-info">
+                        <div class="alignment flex-item">
+                            <div class="teacher-descrice">
+                                <p>インタビューライティングには人の人生を変える力があります。</p>
+                                <p>another life 。 を通じて様々な方々のストーリーを取材する中で、</p>
+                                <p>自分の経験や想いを形にした人が、そのコンテンツを読んで追体験した人が、</p>
+                                <p> 新しい一歩を踏み出し、大きな変化を生み出す姿をたくさん見てきました。</p>
+                                <p> Web上にコンテンツが溢れかえることで、情報の専門性や信頼性を担保する重要度は日々増しています。</p>
+                                <p>誰かの経験や想いを形にする「インタビュー」というスキルが、あなたのキャリアの大きな武器になります。</p>
+                                <p> 私たちは、“今の自分を変える新しい挑戦”を応援します。</p>
                             </div>
-                            <div class="info-teacher">
-                                インタビューライター養成講座 講師 株式会社ドットライフ 代表取締役
-                            </div>
-                            <div class="general-introduction">
-                                一橋大学商学部卒業後、株式会社ネットプロテクションズ入社。後払い決済事業の営業グループリーダー、新卒採用担当等を経てドットライフを立ち上げ。1000人以上の人生ストーリーを配信し、オンライン・オフラインで交流ができる「人生経験のシェアリング」サービス、another
-                                life.を運営。
+                            <div class="avt">
+                                <img src="https://images.pexels.com/photos/1122639/pexels-photo-1122639.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    alt="">
+                                <div class="teacher-name">
+                                    新條 隼人
+                                </div>
+                                <div class="info-teacher">
+                                    インタビューライター養成講座 講師 株式会社ドットライフ 代表取締役
+                                </div>
+                                <div class="general-introduction">
+                                    一橋大学商学部卒業後、株式会社ネットプロテクションズ入社。後払い決済事業の営業グループリーダー、新卒採用担当等を経てドットライフを立ち上げ。1000人以上の人生ストーリーを配信し、オンライン・オフラインで交流ができる「人生経験のシェアリング」サービス、another
+                                    life.を運営。
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="additional alignment">
-                    ●その他各回にライターとして活躍するゲスト登壇者あり
-                </div>
-                <div class="btn new-box">
-                    <button class="btn-register">お申し込みはこちら<i class="fa-sharp fa-solid fa-play"></i></button>
+                    <div class="additional alignment">
+                        ●その他各回にライターとして活躍するゲスト登壇者あり
+                    </div>
+                    <div class="btn new-box">
+                        <button class="btn-register">お申し込みはこちら<i class="fa-sharp fa-solid fa-play"></i></button>
+                    </div>
                 </div>
             </div>
 
             <!-- tu van -->
-            <div class="consultation">
-                <div class="alignment">
-                    <div class="title">
-                        特徴
+            <div class="row-container">
+                <div class="consultation">
+                    <div class="title" id="consultation">
+                        無料相談会
                     </div>
-
-                    <div class="title-consultation">
-                        無料相談会受付中！
-                    </div>
-                    <div class="descrice-consultation">
-                        以下３点を中心に、<br> ご関心があるテーマについて柔軟に相談を承ります。
-                    </div>
-                    <div class="flex-item">
-                        <div class="item">
-                            <div class="item-title ">
-                                <span class="description-lable"> academyの開催概要について知りたい</span>
-                            </div>
-                            <div class="list-item">
-                                <div class="li">● 具体的な講義の進め方</div>
-                                <div class="li">● 参加者の方々の属性</div>
-                                <div class="li">● 講師含めた体制</div>
-                                <div class="li">● ついていけるか、時間が足りるか…などのご質問</div>
-                            </div>
+                    <div class="alignment">
+                        <div class="title-consultation">
+                            無料相談会受付中！
                         </div>
-                        <div class="item">
-
-                            <div class="item-title">
-                                <span class="description-lable">ライターを始めるかどうか迷っている</span>
-                            </div>
-                            <div class="list-item">
-                                <div class="li">● 具体的な講義の進め方</div>
-                                <div class="li">● 参加者の方々の属性</div>
-                                <div class="li">● 講師含めた体制</div>
-                                <div class="li">● ついていけるか、時間が足りるか…などのご質問</div>
-                            </div>
+                        <div class="descrice-consultation">
+                            以下３点を中心に、<br> ご関心があるテーマについて柔軟に相談を承ります。
                         </div>
-                        <div class="item">
-                            <div class="item-title">
-                                <span class="description-lable">ライターとして働く中でスクールに行くか迷っている</span>
+                        <div class="flex-item">
+                            <div class="item">
+                                <div class="item-title ">
+                                    <span class="description-lable"> academyの開催概要について知りたい</span>
+                                </div>
+                                <div class="list-item">
+                                    <div class="li">● 具体的な講義の進め方</div>
+                                    <div class="li">● 参加者の方々の属性</div>
+                                    <div class="li">● 講師含めた体制</div>
+                                    <div class="li">● ついていけるか、時間が足りるか…などのご質問</div>
+                                </div>
                             </div>
-                            <div class="list-item">
-                                <div class="li">● 具体的な講義の進め方</div>
-                                <div class="li">● 参加者の方々の属性</div>
-                                <div class="li">● 講師含めた体制</div>
-                                <div class="li">● ついていけるか、時間が足りるか…などのご質問</div>
+                            <div class="item">
+
+                                <div class="item-title">
+                                    <span class="description-lable">ライターを始めるかどうか迷っている</span>
+                                </div>
+                                <div class="list-item">
+                                    <div class="li">● 具体的な講義の進め方</div>
+                                    <div class="li">● 参加者の方々の属性</div>
+                                    <div class="li">● 講師含めた体制</div>
+                                    <div class="li">● ついていけるか、時間が足りるか…などのご質問</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-title">
+                                    <span class="description-lable">ライターとして働く中でスクールに行くか迷っている</span>
+                                </div>
+                                <div class="list-item">
+                                    <div class="li">● 具体的な講義の進め方</div>
+                                    <div class="li">● 参加者の方々の属性</div>
+                                    <div class="li">● 講師含めた体制</div>
+                                    <div class="li">● ついていけるか、時間が足りるか…などのご質問</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -775,140 +792,143 @@
             </div>
 
             <!-- /câu hỏi thường gặp -->
-            <div class="questions alignment">
-                <div class="title new-box">
+            <div class="row-container">
+                <div class="title new-box" id="questions">
                     よくある質問
                 </div>
-                <div class="question-container">
-                    <div class="box-question">
-                        <div class="question">
-                            <div class="user">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </div>
-                            <div class="question-text">
-                                どのような人が受講していますか？
-                            </div>
-                        </div>
-                        <div class="answer js-answer" id="comments">
-                            <div class="user">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </div>
-                            <div class="answer-text">
-                                <div class="answer-text-son">
-                                    コースによって異なります。 スタンダードコース・動画学習コースは未経験の方にも受講いただけるよう、選考なしとしています。
-                                    プロフェッショナルコースは、仕事の獲得、単価の向上、ライターとしてのキャリアアップに重きを置き、個別で伴走支援するため、選考を設けております。 選考内容はXXXXです。
+                <div class="questions alignment">
+                    <div class="question-container">
+                        <div class="box-question">
+                            <div class="question">
+                                <div class="user">
+                                    <i class="fa-solid fa-circle-user"></i>
                                 </div>
-                                <div class="see-next">
-                                    <button class="js-see-next" data-id="#comments">
-                                        続きを見る <i class="fa-solid fa-caret-down"></i>
-                                    </button>
-                                </div>
-                                <div class="see-hide">
-                                    <button class="js-hide" data-id="#comments">
-                                        閉じる <i class="fa-sharp fa-solid fa-caret-up"></i>
-                                    </button>
+                                <div class="question-text">
+                                    どのような人が受講していますか？
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="box-question">
-                        <div class="question">
-                            <div class="user">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </div>
-                            <div class="question-text">
-                                どのような人が受講していますか？
-                            </div>
-                        </div>
-                        <div class="answer js-answer" id="commentss">
-                            <div class="user">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </div>
-                            <div class="answer-text">
-                                <div class="answer-text-son">
-                                    コースによって異なります。 スタンダードコース・動画学習コースは未経験の方にも受講いただけるよう、選考なしとしています。
-                                    プロフェッショナルコースは、仕事の獲得、単価の向上、ライターとしてのキャリアアップに重きを置き、個別で伴走支援するため、選考を設けております。 選考内容はXXXXです。
+                            <div class="answer js-answer" id="comments">
+                                <div class="user">
+                                    <i class="fa-solid fa-circle-user"></i>
                                 </div>
-                                <div class="see-next">
-                                    <button class="js-see-next" data-id="#commentss">
-                                        続きを見る <i class="fa-solid fa-caret-down"></i>
-                                    </button>
-                                </div>
-                                <div class="see-hide">
-                                    <button class="js-hide" data-id="#commentss">
-                                        閉じる <i class="fa-sharp fa-solid fa-caret-up"></i>
-                                    </button>
+                                <div class="answer-text">
+                                    <div class="answer-text-son">
+                                        コースによって異なります。 スタンダードコース・動画学習コースは未経験の方にも受講いただけるよう、選考なしとしています。
+                                        プロフェッショナルコースは、仕事の獲得、単価の向上、ライターとしてのキャリアアップに重きを置き、個別で伴走支援するため、選考を設けております。
+                                        選考内容はXXXXです。
+                                    </div>
+                                    <div class="see-next">
+                                        <button class="js-see-next" data-id="#comments">
+                                            続きを見る <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="see-hide">
+                                        <button class="js-hide" data-id="#comments">
+                                            閉じる <i class="fa-sharp fa-solid fa-caret-up"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="box-question">
-                        <div class="question">
-                            <div class="user">
-                                <i class="fa-solid fa-circle-user"></i>
+                        <div class="box-question">
+                            <div class="question">
+                                <div class="user">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </div>
+                                <div class="question-text">
+                                    どのような人が受講していますか？
+                                </div>
                             </div>
-                            <div class="question-text">
-                                どのような人が受講していますか？
+                            <div class="answer js-answer" id="commentss">
+                                <div class="user">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </div>
+                                <div class="answer-text">
+                                    <div class="answer-text-son">
+                                        コースによって異なります。 スタンダードコース・動画学習コースは未経験の方にも受講いただけるよう、選考なしとしています。
+                                        プロフェッショナルコースは、仕事の獲得、単価の向上、ライターとしてのキャリアアップに重きを置き、個別で伴走支援するため、選考を設けております。
+                                        選考内容はXXXXです。
+                                    </div>
+                                    <div class="see-next">
+                                        <button class="js-see-next" data-id="#commentss">
+                                            続きを見る <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="see-hide">
+                                        <button class="js-hide" data-id="#commentss">
+                                            閉じる <i class="fa-sharp fa-solid fa-caret-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="answer js-answer" id="commentsss">
-                            <div class="user">
-                                <i class="fa-solid fa-circle-user"></i>
+                        <div class="box-question">
+                            <div class="question">
+                                <div class="user">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </div>
+                                <div class="question-text">
+                                    どのような人が受講していますか？
+                                </div>
                             </div>
-                            <div class="answer-text">
-                                <div class="answer-text-son">
-                                    問題ありません。ワークショップや添削を通じて実際の仕事のイメージを作り、仕事獲得に必要なポートフォリオ作りなどをゼロからサポートいたします。
+                            <div class="answer js-answer" id="commentsss">
+                                <div class="user">
+                                    <i class="fa-solid fa-circle-user"></i>
                                 </div>
-                                <div class="see-next">
-                                    <button class="js-see-next" data-id="#commentsss">
-                                        続きを見る <i class="fa-solid fa-caret-down"></i>
-                                    </button>
-                                </div>
-                                <div class="see-hide">
-                                    <button class="js-hide" data-id="#commentsss">
-                                        閉じる <i class="fa-sharp fa-solid fa-caret-up"></i>
-                                    </button>
+                                <div class="answer-text">
+                                    <div class="answer-text-son">
+                                        問題ありません。ワークショップや添削を通じて実際の仕事のイメージを作り、仕事獲得に必要なポートフォリオ作りなどをゼロからサポートいたします。
+                                    </div>
+                                    <div class="see-next">
+                                        <button class="js-see-next" data-id="#commentsss">
+                                            続きを見る <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="see-hide">
+                                        <button class="js-hide" data-id="#commentsss">
+                                            閉じる <i class="fa-sharp fa-solid fa-caret-up"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="box-question">
-                        <div class="question">
-                            <div class="user">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </div>
-                            <div class="question-text">
-                                どのような人が受講していますか？
-                            </div>
-                        </div>
-                        <div class="answer js-answer" id="commentssss">
-                            <div class="user">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </div>
-                            <div class="answer-text">
-                                <div class="answer-text-son">
-                                    問題ありません。ワークショップや添削を通じて実際の仕事のイメージを作り、仕事獲得に必要なポートフォリオ作りなどをゼロからサポートいたします。
+                        <div class="box-question">
+                            <div class="question">
+                                <div class="user">
+                                    <i class="fa-solid fa-circle-user"></i>
                                 </div>
-                                <div class="see-next">
-                                    <button class="js-see-next" data-id="#commentssss">
-                                        続きを見る <i class="fa-solid fa-caret-down"></i>
-                                    </button>
+                                <div class="question-text">
+                                    どのような人が受講していますか？
                                 </div>
-                                <div class="see-hide">
-                                    <button class="js-hide" data-id="#commentssss">
-                                        閉じる <i class="fa-sharp fa-solid fa-caret-up"></i>
-                                    </button>
+                            </div>
+                            <div class="answer js-answer" id="commentssss">
+                                <div class="user">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </div>
+                                <div class="answer-text">
+                                    <div class="answer-text-son">
+                                        問題ありません。ワークショップや添削を通じて実際の仕事のイメージを作り、仕事獲得に必要なポートフォリオ作りなどをゼロからサポートいたします。
+                                    </div>
+                                    <div class="see-next">
+                                        <button class="js-see-next" data-id="#commentssss">
+                                            続きを見る <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="see-hide">
+                                        <button class="js-hide" data-id="#commentssss">
+                                            閉じる <i class="fa-sharp fa-solid fa-caret-up"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="btn new-box">
-                <button class="btn-register">お申し込みはこちら<i class="fa-sharp fa-solid fa-play"></i></button>
+                <div class="btn new-box">
+                    <button class="btn-register">お申し込みはこちら<i class="fa-sharp fa-solid fa-play"></i></button>
+                </div>
             </div>
         </div>
-
         <div class="gototop">
             <button class="js-top">TOP</button>
         </div>

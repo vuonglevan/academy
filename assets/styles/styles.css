@@ -10,4 +10,9 @@ body{
     padding: 0;
     max-width: 100%;
     font-family: 'Yu Gothic';
+    background-color: #F5F3F2;
+}
+
+button{
+    cursor: pointer;
 }
