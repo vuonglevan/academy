@@ -1,7 +1,7 @@
 let isDown = false;
 let startX;
 let scrollLeft;
-let flagDetailCart = true;
+let flagDetailCart = false;
 
 function scrollHeader() {
     const header = $(".js-header");
@@ -59,15 +59,19 @@ function handleMousemoveSlide(e) {
 function showDetailCart() {
     if (flagDetailCart) {
         flagDetailCart = false;
-        return $($(this).attr('data-id')).removeClass('hidden');
+        $($(this).attr('data-id')).removeClass('show');
+        $($(this).attr('data-id')).removeClass('showed');
+        $($(this).attr('data-id')).addClass('d-none');
     } else {
         flagDetailCart = true;
-        return $($(this).attr('data-id')).addClass('hidden');
+        $($(this).attr('data-id')).addClass('showed');
+            $($(this).attr('data-id')).removeClass('d-none');
+        $($(this).attr('data-id')).addClass('show');
     }
 }
 
 function scrollToDiv() {
-    if($(this).attr('data-id') == '#') return goToTop;
+    if ($(this).attr('data-id') == '#') return goToTop;
     const offset = $($(this).attr('data-id')).offset();
     $('html, body').animate({ scrollTop: offset.top }, 1000);
 }

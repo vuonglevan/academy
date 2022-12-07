@@ -142,7 +142,7 @@ html {
     display: flex;
 }
 
-.box-item .icon{
+.box-item .icon {
     width: 60px;
     position: relative;
 }
@@ -185,6 +185,7 @@ html {
 
 
 
+
 .remove-negative-table .item:nth-child(2) .box-item::after,
 .remove-negative-table .item:nth-child(3) .box-item::after {
     content: "";
@@ -205,8 +206,9 @@ html {
 }
 
 
+/* // hình tròn */
 
-.remove-negative-table .item:nth-child(3) .box-item .icon::before{
+.remove-negative-table .item:nth-child(3) .box-item .icon::before {
     content: '';
     width: 40px;
     height: 40px;
@@ -218,7 +220,7 @@ html {
 }
 
 
-.remove-negative-table .item:nth-child(3) .box-item:nth-child(2) .icon::after{
+.remove-negative-table .item:nth-child(3) .box-item:nth-child(2) .icon::after {
     content: '';
     width: 20px;
     height: 20px;
@@ -227,6 +229,52 @@ html {
     position: absolute;
     top: -10px;
     left: -10px;
+}
+
+
+/* // dấu X */
+.remove-negative-table .item:nth-child(2) .box-item .icon::before,
+.remove-negative-table .item:nth-child(2) .box-item .icon::after {
+    position: absolute;
+    content: '';
+    background-color: #BEB1AA;
+}
+
+.remove-negative-table .item:nth-child(2) .box-item:nth-child(1) .icon::before {
+    width: 5px;
+    height: 50px;
+    transform: rotate(45deg);
+    top: -25px;
+    left: 0px;
+}
+
+.remove-negative-table .item:nth-child(2) .box-item:nth-child(1) .icon::after {
+    width: 5px;
+    height: 50px;
+    transform: rotate(-45deg);
+    top: -25px;
+    left: 0px;
+}
+
+/* // hình tam giác */
+.remove-negative-table .item:nth-child(2) .box-item:nth-child(2) .icon::before,
+.remove-negative-table .item:nth-child(2) .box-item:nth-child(3) .icon::before {
+    background: transparent;
+    border-bottom: 40px solid #BEB1AA;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: -20px;
+    left: -30px;
+}
+
+.remove-negative-table .item:nth-child(2) .box-item:nth-child(2) .icon::after,
+.remove-negative-table .item:nth-child(2) .box-item:nth-child(3) .icon::after {
+    background: transparent;
+    border-bottom: 20px solid #fff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: -7px;
+    left: -15px;
 }
 
 /* /// slider ==== */
@@ -282,6 +330,8 @@ html {
 }
 
 
+/* /// board  */
+
 .board-container {
     padding: 10px;
     border: 3px dashed #788CFA;
@@ -295,6 +345,7 @@ html {
     padding: 20px;
     border-radius: 20px;
     line-height: 40px;
+
 }
 
 .board-bottom {
@@ -305,6 +356,66 @@ html {
     padding: 20px;
     background-color: white;
 }
+
+.arrow-board {
+    position: relative;
+    background: #788CFA;
+    width: 8px;
+    height: 40px;
+}
+
+.arrow-board:nth-child(1) {
+    left: calc(50% - 10px);
+    top: -65px;
+}
+
+.arrow-board:nth-child(2) {
+    left: calc(50% + 10px);
+    top: -105px;
+}
+
+.arrow-board:nth-child(1)::before {
+    content: "";
+    background-color: #788CFA;
+    position: absolute;
+    width: 7px;
+    height: 20px;
+    transform: rotate(45deg);
+    left: -7px;
+    ;
+}
+
+.arrow-board:nth-child(2)::after {
+    content: "";
+    background-color: #788CFA;
+    position: absolute;
+    width: 7px;
+    height: 20px;
+    transform: rotate(45deg);
+    left: 8px;
+    top: 24px;
+}
+
+
+/* .arrow-board::after,
+.arrow-board::before{
+    content: "";
+    background-color: #788CFA;
+    position: absolute;
+    width: 10px;
+    height: 40px;
+}
+
+.arrow-board::before{
+    top: -50px;
+    left: calc(50% + 10px);
+}
+
+.arrow-board::after{
+    top: -50px;
+    left: calc(50% - 10px);
+} */
+
 
 .board-title {
     text-align: center;
@@ -475,12 +586,53 @@ html {
     color: #788CFA;
 }
 
+
+
+
+
+
+
+.card {
+    position: relative;
+}
+
+.card-title {
+    color: #788CFA;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    z-index: 5;
+}
+
+.card-view-detail {
+    z-index: 1;
+}
+
+.show.card-detail {
+    animation: showCardDetail 0.5s linear  forwards;
+}
+
 .card-detail {
     padding: 20px;
     background-color: #fff;
     width: 100%;
     max-width: 200px;
+    top: -700px;
+    z-index: 0;
 }
+
+@keyframes showCardDetail {
+    from {
+        visibility: hidden;
+        transform: translateY(-350px);
+      }
+      to { 
+        visibility: visible;
+        transform: translateY(0px);
+      }
+}
+
 
 .card .price {
     color: white;
@@ -536,11 +688,6 @@ html {
     font-weight: 700;
 
 }
-
-/* .card.show .card-detail{
-    display: none;
-} */
-
 
 .card-view-detail {
     background-color: #fff;
@@ -772,14 +919,6 @@ html {
     opacity: 1;
 }
 
-
-
-
-
-.hidden {
-    display: none;
-}
-
 .title-son {
     color: #788CFA;
     font-size: 20px;
@@ -928,7 +1067,7 @@ html {
     letter-spacing: 1.4px;
     font-weight: 700;
     border-left: 1px solid #788CFA;
-    padding:0 10px;
+    padding: 0 10px;
 }
 
 .top {
@@ -1005,15 +1144,15 @@ html {
     animation: Showheader 1s 1 ease forwards;
 }
 
-.header-menu-right{
+.header-menu-right {
     background-color: #F5F3F2;
 }
 
-.isTop .header-menu-left{
+.isTop .header-menu-left {
     display: none;
 }
 
-.isTop .header-menu-right{
+.isTop .header-menu-right {
     background-color: transparent;
 }
 
@@ -1028,3 +1167,6 @@ html {
     }
 }
 
+.d-none {
+    display: none;
+}
