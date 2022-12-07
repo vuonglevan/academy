@@ -60,12 +60,10 @@ function showDetailCart() {
     if (flagDetailCart) {
         flagDetailCart = false;
         $($(this).attr('data-id')).removeClass('show');
-        $($(this).attr('data-id')).removeClass('showed');
         $($(this).attr('data-id')).addClass('d-none');
     } else {
         flagDetailCart = true;
-        $($(this).attr('data-id')).addClass('showed');
-            $($(this).attr('data-id')).removeClass('d-none');
+        $($(this).attr('data-id')).removeClass('d-none');
         $($(this).attr('data-id')).addClass('show');
     }
 }

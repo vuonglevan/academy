@@ -610,8 +610,39 @@ html {
 }
 
 .show.card-detail {
-    animation: showCardDetail 0.5s linear  forwards;
+    animation: showCardDetail 0.5s linear forwards;
 }
+
+.card-detail .row {
+    height: 850px;
+}
+
+.card-detail .row:nth-child(2) {
+    height: 525px !important;
+}
+
+.card-detail .row:nth-child(4),
+.card-detail .row:nth-child(5) {
+    height: 250px;
+}
+
+.card-detail-container {
+    margin-bottom: 20px;
+}
+
+
+.card-labels {
+    display: flex;
+    gap: 20px;
+}
+
+.card-detail-label {
+    background-color: #EAE5E3;
+    padding: 5px;
+    font-size: 14px;
+}
+
+
 
 .card-detail {
     padding: 20px;
@@ -624,13 +655,12 @@ html {
 
 @keyframes showCardDetail {
     from {
-        visibility: hidden;
         transform: translateY(-350px);
-      }
-      to { 
-        visibility: visible;
+    }
+
+    to {
         transform: translateY(0px);
-      }
+    }
 }
 
 
@@ -1169,4 +1199,10 @@ html {
 
 .d-none {
     display: none;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    
 }
