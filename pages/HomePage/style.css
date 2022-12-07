@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .container {
     background-color: #F5F3F2;
@@ -66,7 +66,11 @@ html {
     font-weight: 500 !important;
     letter-spacing: 1.28px;
     text-align: justify;
+    max-width: inherit;
+    width: inherit;
 }
+
+
 
 .list-support-label {
     background-color: #FAD2D2;
@@ -101,20 +105,25 @@ html {
 }
 
 /* //remove */
+.remove-negative {
+    margin: 0 80px;
+}
 
 .remove-negative-label {
     margin-bottom: 20px;
 }
 
 .lable-item {
-    padding: 10px;
-    width: 100%;
-    max-width: 240px;
-    text-align: center;
+    width: 240px;
+    height: 36px;
     font-size: 16px;
     border-radius: 30px;
     letter-spacing: 1.6px;
     color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lable-item:nth-child(2) {
@@ -127,26 +136,100 @@ html {
 
 .box-item {
     border-radius: 20px;
-    font-size: 20px;
-    font-weight: 700;
     text-align: center;
     color: white;
     margin-bottom: 20px;
+    display: flex;
+}
+
+.box-item .icon{
+    width: 60px;
+    position: relative;
 }
 
 
 .remove-negative-table .item:nth-child(1) .box-item {
-    padding: 30px;
+    width: 240px;
+    height: 80px;
     background: #323232;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
 }
+
+
 
 .remove-negative-table .item:nth-child(2) .box-item,
 .remove-negative-table .item:nth-child(3) .box-item {
-    padding: 15px;
-    background: #323232;
-
+    background-color: #fff;
+    width: 240px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    color: #323232;
+    text-align: left;
+    font-size: 16px;
+    position: relative;
 }
 
+.remove-negative-table .item:nth-child(2) .box-item {
+    font-weight: 500;
+}
+
+.remove-negative-table .item:nth-child(3) .box-item {
+    font-weight: 700;
+}
+
+
+
+.remove-negative-table .item:nth-child(2) .box-item::after,
+.remove-negative-table .item:nth-child(3) .box-item::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+}
+
+.remove-negative-table .item:nth-child(2) .box-item::after {
+    background-color: #BEB1AA;
+}
+
+.remove-negative-table .item:nth-child(3) .box-item::after {
+    background-color: #788CFA99;
+}
+
+
+
+.remove-negative-table .item:nth-child(3) .box-item .icon::before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid #788CFA;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+
+.remove-negative-table .item:nth-child(3) .box-item:nth-child(2) .icon::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid #788CFA;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+/* /// slider ==== */
 .slider-container::-webkit-scrollbar {
     width: 0px;
     background: transparent;
@@ -351,6 +434,7 @@ html {
     mix-blend-mode: multiply;
 
 }
+
 .circle-name {
     color: #fff;
 }
@@ -365,6 +449,7 @@ html {
     align-items: center;
     height: 100%;
     min-height: 500px;
+    margin: 0 80px;
 }
 
 .result {
@@ -508,7 +593,7 @@ html {
 }
 
 .teacher .avt {
-    margin-top: 250px;
+    margin-top: 290px;
 }
 
 .teacher-info .avt img {
@@ -691,7 +776,7 @@ html {
 
 
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -769,17 +854,39 @@ html {
 .alignment {
     width: 100%;
     max-width: 1000px;
-    margin: 0 calc((100% - 1000px) / 2);
-}
-
-.align{
-    margin: 0 80px;
+    margin: 0 auto;
 }
 
 
+.plus {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
 
+.plus::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #BEB1AA;
+    height: 15px;
+    margin-top: -5px;
+    top: 50%;
+    left: -15px;
+    right: -15px;
+}
 
-
+.plus::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #BEB1AA;
+    width: 15px;
+    margin-left: -10px;
+    left: 55%;
+    top: -15px;
+    bottom: -15px;
+}
 
 
 
@@ -812,21 +919,20 @@ html {
     align-items: center;
     justify-content: center;
 }
-.menu-item a,
-.menu-item button{
+
+.menu-item a {
     text-decoration: none;
-    border: none;
     background-color: #F5F3F2;
     color: #3232FF;
     font-size: 14px;
     letter-spacing: 1.4px;
     font-weight: 700;
-    
+    border-left: 1px solid #788CFA;
+    padding:0 10px;
 }
 
-.menu-item a{
-    border-left: 1px solid #788CFA;
-    padding-left: 10px;
+.top {
+    border: none !important;
 }
 
 .menu-primary {
@@ -835,6 +941,7 @@ html {
     color: #F5F3F2;
     border-radius: 50px 0 0 50px;
     padding: 20px;
+    min-width: 200px;
 }
 
 .header-img {
@@ -861,7 +968,7 @@ html {
     justify-content: space-between;
 }
 
-.menu-bottom-item a{
+.menu-bottom-item a {
     text-decoration: none;
     text-align: center;
     width: 108px;
@@ -880,65 +987,44 @@ html {
 .header-menus {
     position: fixed;
     display: flex;
-    gap: 20px;
+    z-index: 10;
+    right: 0;
+    margin-top: 20px;
+}
+
+.header-menu-left {
+    display: flex;
     background-color: #F5F3F2;
     font-size: 14px;
     letter-spacing: 1.4px;
     border-radius: 50px 0 0 50px;
     color: #788CFA;
     opacity: 1;
-    z-index: 10;
-    right: 0;
-    margin-top: 20px;
+    right: -100%;
+    position: relative;
+    animation: Showheader 1s 1 ease forwards;
 }
 
-.isTop .menu-item:not(.menu-primary){
+.header-menu-right{
+    background-color: #F5F3F2;
+}
+
+.isTop .header-menu-left{
     display: none;
 }
 
-.menu-item:not(.menu-primary) {
-    animation: Showheader 1s 1 ease forwards;
-    opacity: 0;
+.isTop .header-menu-right{
+    background-color: transparent;
 }
 
 @keyframes Showheader {
     form {
-        opacity: 0;
-
+        right: -100%;
     }
 
     to {
-        opacity: 1;
+        right: 0%;
 
     }
 }
 
-
-
-.plus {
-    width: 40px;
-    height: 40px;
-    position: relative;
-  }
-  .plus::after {
-    content: " ";
-    position: absolute;
-    display: block;
-    background-color: #BEB1AA;
-    height: 15px;
-    margin-top: -5px;
-    top: 50%;
-    left: -15px;
-    right: -15px;
-  }
-  .plus::before {
-    content: " ";
-    position: absolute;
-    display: block;
-    background-color: #BEB1AA;
-    width: 15px;
-    margin-left: -10px;
-    left: 55%;
-    top: -15px;
-    bottom: -15px;
-  }

@@ -29,7 +29,7 @@ function seeNext(e) {
 
 function goToTop(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 1200);
+    $('html, body').animate({ scrollTop: 0 }, 1000);
 }
 
 function handleMousedownSlide(e) {
@@ -67,8 +67,9 @@ function showDetailCart() {
 }
 
 function scrollToDiv() {
+    if($(this).attr('data-id') == '#') return goToTop;
     const offset = $($(this).attr('data-id')).offset();
-    $('html, body').animate({ scrollTop: offset.top }, 1200);
+    $('html, body').animate({ scrollTop: offset.top }, 1000);
 }
 
 $(document).ready(function () {
