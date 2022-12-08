@@ -306,6 +306,8 @@ html {
 
 .slider .avt img {
     border-radius: 20px 0 20px 0;
+    width: 270px;
+    height: 270px;
 }
 
 .name {
@@ -870,6 +872,10 @@ html {
     display: flex
 }
 
+.question-container{
+    padding:0 80px;
+}
+
 .user i {
     font-size: 40px;
 }
@@ -897,7 +903,7 @@ html {
 }
 
 .answer-text-son {
-    max-width: 200px;
+    /* max-width: 200px; */
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -1319,6 +1325,10 @@ html {
     .header-img img {
         width: 350px;
         height: 250px;
+    }
+
+    .answer-text-son{
+        max-width: 200px;
     }
 
     .header-btn {
