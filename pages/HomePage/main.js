@@ -61,10 +61,12 @@ function showDetailCart() {
         flagDetailCart = false;
         $($(this).attr('data-id')).removeClass('show');
         $($(this).attr('data-id')).addClass('d-none');
+        // $($(this).attr('data-id')).addClass('hidden');
     } else {
         flagDetailCart = true;
         $($(this).attr('data-id')).removeClass('d-none');
         $($(this).attr('data-id')).addClass('show');
+        // $($(this).attr('data-id')).addClass('hidden');
     }
 }
 
@@ -74,11 +76,21 @@ function scrollToDiv() {
     $('html, body').animate({ scrollTop: offset.top }, 1000);
 }
 
+function showHeaderMobie() {
+    $('.js-header-mobie').removeClass('d-none');
+}
+
+function hiddenHeaderMobie() {
+    $('.js-header-mobie').addClass('d-none');
+}
+
 $(document).ready(function () {
     document.addEventListener('scroll', function (e) {
         scrollHeader();
     }, true)
     $(document).on('click', '.js-header-item', scrollToDiv)
+    $(document).on('click', '.js-btn-navbar', showHeaderMobie)
+    $(document).on('click', '.js-header-mobie-x', hiddenHeaderMobie)
     $(document).on('click', '.js-btn-show-card', showDetailCart)
     $(document).on('click', '.js-top', goToTop)
     $(document).on('click', '.js-see-next', seeNext)
