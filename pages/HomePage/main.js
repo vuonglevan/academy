@@ -60,13 +60,15 @@ function showDetailCart() {
     if (flagDetailCart) {
         flagDetailCart = false;
         $($(this).attr('data-id')).removeClass('show');
-        $($(this).attr('data-id')).addClass('d-none');
-        // $($(this).attr('data-id')).addClass('hidden');
+        $($(this).attr('data-id')).addClass('hidden');
+        setTimeout(()=>{
+            $($(this).attr('data-id')).addClass('d-none');
+        },2100)
     } else {
         flagDetailCart = true;
         $($(this).attr('data-id')).removeClass('d-none');
+        $($(this).attr('data-id')).removeClass('hidden');
         $($(this).attr('data-id')).addClass('show');
-        // $($(this).attr('data-id')).addClass('hidden');
     }
 }
 
@@ -78,10 +80,13 @@ function scrollToDiv() {
 
 function showHeaderMobie() {
     $('.js-header-mobie').removeClass('d-none');
+    $('.js-header-mobie').addClass('handle');
+    $('.js-header-mobie').removeClass('hidden');
 }
 
 function hiddenHeaderMobie() {
-    $('.js-header-mobie').addClass('d-none');
+    $('.js-header-mobie').removeClass('handle');
+    $('.js-header-mobie').addClass('hidden');
 }
 
 $(document).ready(function () {

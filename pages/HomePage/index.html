@@ -22,7 +22,7 @@
             </div>
             <div class="header-menus js-header-menu">
                 <div class="header-menu-left">
-                    <div class="menu-item js-header-item" data-id="#"><a class="item-link top" href="##">Top</a>
+                    <div class="menu-item js-top" data-id="#"><a class="item-link top" href="#">Top</a>
                     </div>
                     <div class="menu-item js-header-item" data-id="#overview"><a class="item-link"
                             href="#overview">コース概要</a></div>
@@ -48,13 +48,14 @@
                     alt="">
             </div>
             <div class="header-bottom">
-                <div class="menu-bottom-item js-header-item"><a href="#overview">コース概要</a></div>
-                <div class="menu-bottom-item js-header-item"><a href="#voice">卒業生の声</a></div>
-                <div class="menu-bottom-item js-header-item"><a href="#feature">特徴</a></div>
-                <div class="menu-bottom-item js-header-item"><a href="#card">カリキュラム・料金</a></div>
-                <div class="menu-bottom-item js-header-item"><a href="#teacher">講師</a></div>
-                <div class="menu-bottom-item js-header-item"><a href="#consultation">無料相談会</a></div>
-                <div class="menu-bottom-item js-header-item"><a href="#questions">よくある質問</a></div>
+                <div class="menu-bottom-item js-header-item" data-id="#overview"><a href="#overview">コース概要</a></div>
+                <div class="menu-bottom-item js-header-item" data-id="#voice"><a href="#voice">卒業生の声</a></div>
+                <div class="menu-bottom-item js-header-item" data-id="#feature"><a href="#feature">特徴</a></div>
+                <div class="menu-bottom-item js-header-item" data-id="#card"><a href="#card">カリキュラム・料金</a></div>
+                <div class="menu-bottom-item js-header-item" data-id="#teacher"><a href="#teacher">講師</a></div>
+                <div class="menu-bottom-item js-header-item" data-id="#consultation"><a href="#consultation">無料相談会</a>
+                </div>
+                <div class="menu-bottom-item js-header-item" data-id="#questions"><a href="#questions">よくある質問</a></div>
             </div>
             <div class="navbar">
                 <button class="js-btn-navbar"><i class="fa-solid fa-bars"></i></button>
@@ -73,13 +74,20 @@
                 </div>
                 <div class="header-movie-main">
                     <ul>
-                        <li><button class="js-header-item" data-id="#overview">コース概要</button><i class="fa-sharp fa-solid fa-caret-right"></i></li>
-                        <li><button class="js-header-item" data-id="#voice">卒業生の声</button><i class="fa-sharp fa-solid fa-caret-right"></i></li>
-                        <li><button class="js-header-item" data-id="#feature">特徴</button><i class="fa-sharp fa-solid fa-caret-right"></i></li>
-                        <li><button class="js-header-item" data-id="#card">カリキュラム・料金</button><i class="fa-sharp fa-solid fa-caret-right"></i></li>
-                        <li><button class="js-header-item" data-id="#teacher">講師</button><i class="fa-sharp fa-solid fa-caret-right"></i></li>
-                        <li><button class="js-header-item" data-id="#overviewconsultation">無料相談会</button><i class="fa-sharp fa-solid fa-caret-right"></i></li>
-                        <li><button class="js-header-item" data-id="#questions">よくある質問</button><i class="fa-sharp fa-solid fa-caret-right"></i></li>
+                        <li><button class="js-header-item" data-id="#overview">コース概要</button><i
+                                class="fa-sharp fa-solid fa-caret-right"></i></li>
+                        <li><button class="js-header-item" data-id="#voice">卒業生の声</button><i
+                                class="fa-sharp fa-solid fa-caret-right"></i></li>
+                        <li><button class="js-header-item" data-id="#feature">特徴</button><i
+                                class="fa-sharp fa-solid fa-caret-right"></i></li>
+                        <li><button class="js-header-item" data-id="#card">カリキュラム・料金</button><i
+                                class="fa-sharp fa-solid fa-caret-right"></i></li>
+                        <li><button class="js-header-item" data-id="#teacher">講師</button><i
+                                class="fa-sharp fa-solid fa-caret-right"></i></li>
+                        <li><button class="js-header-item" data-id="#overviewconsultation">無料相談会</button><i
+                                class="fa-sharp fa-solid fa-caret-right"></i></li>
+                        <li><button class="js-header-item" data-id="#questions">よくある質問</button><i
+                                class="fa-sharp fa-solid fa-caret-right"></i></li>
                     </ul>
                 </div>
             </div>
@@ -122,7 +130,7 @@
                         <div class="find-jobs flex-item alignment">
                             <div class="find-job item">
                                 <div class="item-name">
-                                    新しくライターの仕事を <br>始めたい
+                                    新しくライターの仕事を始めたい
                                 </div>
                                 <div class="list-support">
                                     <div class="list-support-item">
@@ -140,7 +148,7 @@
                             </div>
                             <div class="find-job item">
                                 <div class="item-name">
-                                    ライターとして <br> レベルアップしたい
+                                    ライターとして<br> レベルアップしたい
                                 </div>
                                 <div class="list-support">
                                     <div class="list-support-item">
@@ -163,7 +171,7 @@
                             </div>
                             <div class="find-job item">
                                 <div class="item-name">
-                                    仕事にインタビュースキルを<br> 生かしたい
+                                    仕事にインタビュースキルを生かしたい
                                 </div>
                                 <div class="list-support">
                                     <div class="list-support-item">
@@ -768,11 +776,8 @@
                     <div class="title new-box" id="teacher">
                         講師
                     </div>
-                    <!-- <div class="alignment">
-                    
-                </div> -->
                     <div class="teacher-info">
-                        <div class="alignment flex-item">
+                        <div class="flex-item alignment">
                             <div class="teacher-descrice">
                                 <p>インタビューライティングには人の人生を変える力があります。</p>
                                 <p>another life 。 を通じて様々な方々のストーリーを取材する中で、</p>
@@ -798,7 +803,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="additional">
+                    <div class="additional alignment">
                         ●その他各回にライターとして活躍するゲスト登壇者あり
                     </div>
                     <div class="btn new-box">
