@@ -977,6 +977,8 @@ html {
 }
 
 .gototop button {
+    width: 118px;
+    height: 118px;
     color: #788CFA;
     font-weight: 700;
     font-size: 16px;
