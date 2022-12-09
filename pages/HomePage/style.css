@@ -877,10 +877,14 @@ html {
     margin: 20px 0;
 }
 
+.question{
+    align-items: center;
+}
+
 .question,
 .answer {
     gap: 20px;
-    display: flex
+    display: flex;
 }
 
 .question-container {
@@ -912,7 +916,7 @@ html {
     width: 100%;
     background: #EAE5E3;
     border: none;
-    border-radius: 20px;
+    border-radius:0 20px 20px;
 }
 
 .answer-text-son {
@@ -1864,12 +1868,12 @@ html {
 
     .arrow-board:nth-child(2) {
         left: calc(50% + 10px);
-        top: -105px;
+        top: 0;
     }
 
     .arrow-board:nth-child(1) {
         left: calc(50% - 20px);
-        top: -65px;
+        top: 0;
     }
     .board-bottom-lable,
     .board-bottom-title{
