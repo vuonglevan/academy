@@ -87,6 +87,9 @@ function showHeaderMobie() {
 function hiddenHeaderMobie() {
     $('.js-header-mobie').removeClass('handle');
     $('.js-header-mobie').addClass('hidden');
+    setTimeout(()=>{
+        $('.js-header-mobie').addClass('d-none');
+    },1000)
 }
 
 $(document).ready(function () {
