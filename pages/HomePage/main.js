@@ -61,9 +61,9 @@ function showDetailCart() {
         flagDetailCart = false;
         $($(this).attr('data-id')).removeClass('show');
         $($(this).attr('data-id')).addClass('hidden');
-        setTimeout(()=>{
+        setTimeout(() => {
             $($(this).attr('data-id')).addClass('d-none');
-        },2100)
+        }, 2100)
     } else {
         flagDetailCart = true;
         $($(this).attr('data-id')).removeClass('d-none');
@@ -87,9 +87,9 @@ function showHeaderMobie() {
 function hiddenHeaderMobie() {
     $('.js-header-mobie').removeClass('handle');
     $('.js-header-mobie').addClass('hidden');
-    setTimeout(()=>{
+    setTimeout(() => {
         $('.js-header-mobie').addClass('d-none');
-    },1000)
+    }, 1000)
 }
 
 $(document).ready(function () {

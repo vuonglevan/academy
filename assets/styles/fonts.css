@@ -2,3 +2,13 @@
     font-family: 'Yu Gothic';
     src: url(../fonts/yu-gothic/yugothib.ttf);
 }
+
+@font-face {
+    font-family: 'Yu Gothic Light';
+    src: url(../fonts/yu-gothic-light/yugothil.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(../fonts/yu-gothic-light/yugothil.ttf);
+}
