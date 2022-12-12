@@ -2,6 +2,7 @@ let isDown = false;
 let startX;
 let scrollLeft;
 let flagDetailCart = false;
+let flagShowComment = true;
 
 function scrollHeader() {
     const header = $(".js-header");
@@ -13,18 +14,23 @@ function scrollHeader() {
     }
 }
 
-function seeHide(e) {
-    e.preventDefault();
-    $('.js-answer').removeClass("change-answer-text");
+// function seeHide(e) {
+//     e.preventDefault();
+//     $('.js-answer').removeClass("change-answer-text");
 
-}
+// }
 
 function seeNext(e) {
     e.preventDefault();
     const currentComment = $(this);
-    const content = currentComment.attr('data-id');
-    $(content).addClass("change-answer-text");
-
+    const content = currentComment.parent().parent().parent();
+    if (flagShowComment) {
+        flagShowComment = false;
+        $(content).addClass("change-answer-text");
+    } else {
+        flagShowComment = true;
+        $(content).removeClass("change-answer-text");
+    }
 }
 
 function goToTop(e) {
@@ -101,8 +107,7 @@ $(document).ready(function () {
     $(document).on('click', '.js-header-mobie-x', hiddenHeaderMobie)
     $(document).on('click', '.js-btn-show-card', showDetailCart)
     $(document).on('click', '.js-top', goToTop)
-    $(document).on('click', '.js-see-next', seeNext)
-    $(document).on('click', '.js-hide', seeHide)
+    $(document).on('click', '.js-toggle-comment', seeNext)
     $(document).on('mousedown', '.js-slider', handleMousedownSlide);
     $(document).on('mouseleave', '.js-slider', handleMouseleaveSlide);
     $(document).on('mouseup', '.js-slider', handleMouseupSlide);

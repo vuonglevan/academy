@@ -14,19 +14,13 @@ html {
     display: none;
 }
 
-.card-describe,
-.card-content {
-    padding: 0 80px;
-}
-
 .description-text {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 60px;
-    padding: 0 80px;
 }
 
-.introduces {
+.voices-student-content {
     padding: 0 80px;
 }
 
@@ -124,9 +118,6 @@ html {
 }
 
 /* //remove */
-.remove-negative {
-    margin: 0 80px;
-}
 
 .remove-negative-label {
     margin-bottom: 20px;
@@ -296,6 +287,11 @@ html {
     left: -15px;
 }
 
+/* .feature {
+    padding: 0 80px;
+    box-sizing: border-box; */
+/* } */
+
 
 /* /// slider ==== */
 .slider-container::-webkit-scrollbar {
@@ -309,7 +305,6 @@ html {
     overflow: auto;
     max-width: 1000px;
     margin-top: 20px;
-    margin: 0 80px;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -387,7 +382,7 @@ html {
     height: 40px;
 }
 
-.arrows{
+.arrows {
     position: relative;
 }
 
@@ -510,6 +505,7 @@ html {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    padding: 0 80px;
 }
 
 .skill {
@@ -797,12 +793,13 @@ html {
 }
 
 .teacher .flex-item {
-    padding: 60px 0;
+    padding: 60px 80px;
+    box-sizing: border-box;
 }
 
 
-.teacher .avt{
-    margin-top: 290px;
+.teacher .avt {
+    margin-top: 240px;
 }
 
 .teacher-info .avt img {
@@ -829,8 +826,17 @@ html {
     margin-bottom: 20px;
 
 }
+.feature,
+.description,
+.find-jobs,
+.cards,
+.additional {
+    padding: 0 80px;
+    box-sizing: border-box;
+}
 
 .general-introduction {
+    font-family: 'Yu Gothic Light';
     color: #fff;
     font-size: 14px;
     font-weight: 500 !important;
@@ -877,7 +883,7 @@ html {
     margin: 20px 0;
 }
 
-.question{
+.question {
     align-items: center;
 }
 
@@ -911,17 +917,21 @@ html {
     color: #BEB1AA;
 }
 
+.row-remove{
+    position: relative;
+}
+
 .answer-text {
     padding: 20px;
-    width: 100%;
+    width: calc(100% - 100px);
     background: #EAE5E3;
     border: none;
-    border-radius:0 20px 20px;
+    border-radius: 0 20px 20px;
 }
 
 .answer-text-son {
     width: 100%;
-    max-width: 900px;
+    height: 25px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -929,10 +939,10 @@ html {
 
 .change-answer-text .answer-text-son {
     width: 100%;
-    max-width: 900px;
     font-size: 16px;
     font-weight: 500;
     white-space: normal;
+    height: auto;
 }
 
 
@@ -1081,7 +1091,7 @@ html {
     position: absolute;
     display: block;
     background-color: #BEB1AA;
-    height: 15px;
+    height: 10px;
     margin-top: -5px;
     top: 50%;
     left: -15px;
@@ -1093,9 +1103,9 @@ html {
     position: absolute;
     display: block;
     background-color: #BEB1AA;
-    width: 15px;
+    width: 10px;
     margin-left: -10px;
-    left: 55%;
+    left: 60%;
     top: -15px;
     bottom: -15px;
 }
@@ -1157,10 +1167,6 @@ html {
     padding: 20px;
     min-width: 200px;
 }
-/* .change-answer-text .answer-text-son{
-    width: 100%;
-    max-width: 215px;
-} */
 
 .navbar {
     display: none;
@@ -1174,7 +1180,7 @@ html {
     letter-spacing: 2px;
 }
 
-.title-web{
+.title-web {
     color: #fff;
     font-size: 40px;
     padding: 40px;
@@ -1230,6 +1236,7 @@ html {
     display: flex;
     z-index: 10;
     right: 0;
+    border-radius: 50px;
     top: 20px;
 }
 
@@ -1742,6 +1749,7 @@ html {
     }
 
     .general-introduction {
+        /* font-family: 'Yu Gothic Light'; */
         padding: 0 30px;
         letter-spacing: 0.28px;
     }
@@ -1877,17 +1885,26 @@ html {
         left: calc(50% - 20px);
         top: 0;
     }
+
     .board-bottom-lable,
-    .board-bottom-title{
+    .board-bottom-title {
         font-size: 18px;
     }
 
-    .board-bottom-description{
+    .board-bottom-description {
         letter-spacing: 1.32px;
     }
 
-    .teacher .avt{
+    .teacher .avt {
         margin: 0;
     }
-
+    .description,
+    .find-jobs,
+    .voices-student-content,
+    .cards,
+    .teacher .flex-item,
+    .feature,
+    .list-skill{
+        padding: 0;
+    }
 }
